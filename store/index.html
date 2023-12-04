@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Calculadora de Chacinados</title>
+  <link rel="icon" href="online/pc/images/icon.png" type="image/x-icon">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
 
+    .app-details {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .app-header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 15px;
+    }
+
+    .app-screenshots img {
+      width: 20%;
+      height: auto;
+      border-top: 1px solid #dee2e6;
+      border-bottom: 1px solid #dee2e6;
+      margin-bottom: 15px;
+    }
+
+    .app-description,
+    .app-features,
+    .app-history {
+      padding: 20px;
+    }
+
+    .download-button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="app-details">
+      <div class="app-header text-center">
+        <h1 class="display-4">Calculadora de Chacinados</h1>
+        <p class="h5">Guido Rosseto</p>
+        <p>Diseñada para moviles</p>
+      </div>
+
+      <div class="app-screenshots"><center>
+        <!-- Agrega tus imágenes aquí -->
+        <img src="images/1.png" alt="Screenshot 1">
+        <img src="images/3.png" alt="Screenshot 3">
+        <img src="images/2.png" alt="Screenshot 2">
+        <img src="images/4.png" alt="Screenshot 4">
+      </div>
+
+      <div class="app-description">
+        <h3>Descripción</h3>
+        <p>
+          Calculadora de los costos de producción del chorizo y otros chacinados.
+        </p>
+      </div>
+
+      <div class="app-features">
+        <h3>Características</h3>
+        <!-- Agrega tus características aquí -->
+        <p>Calcular costo de producción del chorizo</p>
+        <p>Calcular costo de producción de otros chacinados (en fase beta)</p>
+      </div>
+
+      <div class="app-history">
+        <h3>Historial de actualizaciones</h3>
+        <p>4 dic 2023 Versión 1.0.1<br>Puede tener faltantes y errores por ser la primer versión.</p>
+      </div>
+
+
+      <div class="text-center mb-4">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bahrein">
+        Descargar
+    </button>
+       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#abudhabi">
+        Usar en linea
+    </button>
+      </div>
+    </div>
+  </div>
+
+<!--bahrein submenu -->
+    <div class="modal fade" id="bahrein" tabindex="-1" aria-labelledby="imagenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg"> <!-- Usa modal-lg para un modal más grande -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imagenModalLabel">Descargar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+        <a href="Calculadora de Chacinados.debug.v1.0.1.apk" class="btn download-button" download>Descargar APK</a>
+      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--abudhabi submenu -->
+    <div class="modal fade" id="abudhabi" tabindex="-1" aria-labelledby="imagenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg"> <!-- Usa modal-lg para un modal más grande -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imagenModalLabel">Online</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+        <a href="online/pc/index.html" class="btn download-button" download>PC</a>
+      </div>
+      <div class="text-center mb-4">
+        <a href="online/mobile/index.html" class="btn download-button" download>Moviles</a>
+      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+</body>
+</html>
